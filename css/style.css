@@ -79,6 +79,12 @@ img {
 html {
   scroll-behavior: smooth;
 }
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 /* Buttons */
 button {
   background-color: var(--c2);
@@ -88,6 +94,8 @@ button {
   cursor: pointer;
   font-weight: 600;
   font-family: inherit;
+  padding: 16px 32px;
+  font-size: 18px;
 }
 button:hover {
   background-color: transparent;
@@ -103,6 +111,9 @@ footer a:hover {
   font-weight: 600;
 }
 /* Hero */
+.hero-section {
+  padding: 272px 0;
+}
 .hero-tittle {
   color: var(--background-color);
   text-align: center;
@@ -125,10 +136,22 @@ footer a:hover {
   font-size: 20px;
 }
 /* Sections */
+.traditions-section.section {
+  padding-top: 96px;
+}
+.section {
+  padding: 48px 0;
+}
 .section-tittle {
   font-weight: 900;
   font-size: 64px;
   line-height: 1.3;
+}
+.traditions-section .section-tittle {
+  margin-bottom: 42px;
+}
+.traditions-section .traditions-text {
+  margin-bottom: 42px;
 }
 .section-tittle .accent {
   color: var(--c3);
@@ -140,14 +163,25 @@ section p .accent {
 .chef-tittle {
   font-weight: 600;
   font-size: 40px;
+  margin-bottom: 16px;
+}
+.chiefs-section.section .section-tittle {
+  margin-bottom: 80px;
 }
 .format-tittle {
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 16px;
 }
 .format-text {
   font-weight: 300;
   font-size: 14px;
+}
+.forms-section.section .section-tittle {
+  margin-bottom: 80px;
+}
+.contacts-section.section .section-tittle {
+  margin-bottom: 16px;
 }
 /* Form section */
 .article-cart {
@@ -156,6 +190,7 @@ section p .accent {
 /* Contacts section */
 .contacts-short-text {
   color: var(--c3);
+  margin-bottom: 42px;
 }
 /* Footer */
 footer,
@@ -174,4 +209,13 @@ footer a {
 .text-politic {
   font-weight: 300;
   font-size: 16px;
+}
+/* Hidden */
+.hidden {
+  position: absolute;
+  left: -10000pc;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
