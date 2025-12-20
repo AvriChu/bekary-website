@@ -8,12 +8,12 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="nav-menu">
           <a href="#"
             ><img src="./img/logo.svg" alt="Лого сучасної пекарні"
           /></a>
-          <ul>
+          <ul class="nav-menu-list">
             <li>
               <a class="nav-link" href="#traditions-section">Наші традиції</a>
             </li>
@@ -29,7 +29,7 @@
       <section class="hero-section">
         <h1 class="hero-tittle"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="hidden"></h2>
           <ul class="advantages-list">
@@ -40,20 +40,26 @@
         </div>
       </section>
       <section class="traditions-section section" id="traditions-section">
-        <div class="container">
-          <h2 class="section-tittle">Новий формат<br />традицій</h2>
-          <p class="traditions-text">
-            <span class="accent big-text">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі —
-            <span class="accent">5 хвилин і замовлення готове.</span>
-            А ще у наших пекарень стильний дизайн та висока якість
-            обслуговування!
-          </p>
-          <img src="./img/bekary-man.jpg" alt="Чоловік пекар" />
+        <div class="container traditions-container">
+          <div class="traditions-content">
+            <h2 class="section-tittle">Новий формат<br />традицій</h2>
+            <p class="traditions-text">
+              <span class="accent big-text">shop bakery</span> — це пекарня, яка
+              взяла все найкраще, і зберегла смак традиційної випічки та
+              натуральність інгредієнтів.
+            </p>
+            <p class="traditions-text">
+              Ми працюємо як найвідоміші мережі —<br />
+              <span class="accent">5 хвилин і замовлення готове.</span><br />
+              А ще у наших пекарень стильний дизайн<br />та висока якість
+              обслуговування!
+            </p>
+          </div>
+          <img
+            class="tradition-img"
+            src="./img/bekary-man.jpg"
+            alt="Чоловік пекар"
+          />
         </div>
       </section>
       <section class="chiefs-section section" id="chiefs-section">
@@ -89,8 +95,8 @@
       <section class="forms-section section" id="forms-section">
         <div class="container">
           <h2 class="section-tittle">Формати</h2>
-          <ul>
-            <li>
+          <ul class="list-of-acrticle-carts">
+            <li class="formats-item">
               <article class="article-cart">
                 <h3 class="format-tittle" lang="en">Walrus</h3>
                 <div class="format-text">
@@ -104,7 +110,7 @@
                 </div>
               </article>
             </li>
-            <li>
+            <li class="formats-item">
               <article class="article-cart">
                 <h3 class="format-tittle" lang="en">Horseshoe</h3>
                 <div class="format-text">
@@ -115,7 +121,7 @@
                 </div>
               </article>
             </li>
-            <li>
+            <li class="formats-item">
               <article class="article-cart">
                 <h3 class="format-tittle" lang="en">Handlebar</h3>
                 <div class="format-text">
