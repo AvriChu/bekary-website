@@ -28,6 +28,7 @@
   --c2: #819b57;
   --c3: #465929;
   --c4: #a18268;
+  --c5: #cfcfbc;
   --background-color: #faf4ea;
 }
 /* Base */
@@ -47,6 +48,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
+  background-color: var(--background-color);
 }
 a {
   text-decoration: none;
@@ -133,6 +135,17 @@ footer a:hover {
 }
 .hero-section {
   padding: 272px 0;
+  background: linear-gradient(
+      127deg,
+      rgba(18, 18, 17, 0.78) 0%,
+      rgba(18, 18, 17, 0.6) 63.89%,
+      rgba(18, 18, 17, 0) 100%
+    ),
+    url('../img/hero-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .hero-tittle {
   color: var(--background-color);
@@ -165,6 +178,9 @@ footer a:hover {
 /* Sections */
 .traditions-section.section {
   padding-top: 96px;
+}
+.tradition-img {
+  border-radius: 400px 400px 0 0;
 }
 .section {
   padding: 48px 0;
@@ -216,8 +232,23 @@ section p .accent {
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
 }
+.section-tittle.chiefs-tittle::before,
+.section-tittle.chiefs-tittle::after {
+  content: '';
+  display: block;
+  width: 352px;
+  height: 0px;
+  border: 2px solid var(--c5);
+}
+.section-tittle.forms-tittle,
+.section-tittle.chiefs-tittle {
+  text-align: center;
+}
 .forms-section.section .section-tittle {
   margin-bottom: 80px;
+}
+.contacts-section {
+  padding-bottom: 96px;
 }
 .contacts-section.section .section-tittle {
   margin-bottom: 16px;
@@ -232,17 +263,41 @@ section p .accent {
   padding: 24px;
   border-radius: 16px;
   color: var(--background-color);
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+}
+.article-img {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--background-color), -16px 16px 0 2px var(--c4);
 }
 /* Contacts section */
 .contacts-short-text {
   color: var(--c3);
   margin-bottom: 42px;
 }
+.google-map {
+  border-radius: 16px;
+  border: none;
+}
 /* Footer */
+footer {
+  padding: 32px 0px;
+  background-color: var(--c1);
+  background-image: url('../img/footer-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 footer,
 footer a {
   color: var(--background-color);
 }
+
 .text-data-safe {
   color: var(--c4);
   font-weight: 400;
