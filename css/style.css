@@ -88,7 +88,7 @@ html {
   padding: 0 24px;
 }
 /* Buttons */
-button {
+.order-button {
   background-color: var(--c2);
   color: var(--background-color);
   border: 2px solid var(--c2);
@@ -99,7 +99,7 @@ button {
   padding: 16px 32px;
   font-size: 18px;
 }
-button:hover {
+.order-button:hover {
   background-color: transparent;
   color: var(--c3);
 }
@@ -232,6 +232,25 @@ section p .accent {
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
 }
+.slider-button {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--c1);
+}
+.slider-button:hover {
+  background-color: var(--c1);
+  fill: var(--background-color);
+}
+.formats-arrow {
+  height: 16px;
+  width: 16px;
+}
 .section-tittle.chiefs-tittle::before,
 .section-tittle.chiefs-tittle::after {
   content: '';
@@ -319,4 +338,12 @@ footer a {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+.icon-link {
+  width: 32px;
+  height: 32px;
+  fill: var(--background-color);
+}
+.icon-link:hover {
+  fill: var(--c2);
 }
